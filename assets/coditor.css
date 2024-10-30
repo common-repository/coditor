@@ -1,0 +1,164 @@
+#coditor-header{
+	padding: 10px 5px 10px 20px;
+	background: #2F3129;
+	margin-left: -20px;
+}
+
+#coditor-header:after,
+#coditor-ide:after,
+#file-tree ul#tab:after,
+#coditor-footer:after{
+	content: '.';
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	display: block;
+}
+
+#coditor-header>a{
+	color: #eee;
+	font-size: 18px;
+	text-decoration: none;
+	margin-top: 10px;
+    display: inline-block;
+}
+
+#coditor-header>#toolbar{
+	float: right;
+}
+
+#coditor-header>#toolbar>ul{
+	margin: 0;
+}
+
+#coditor-header>#toolbar>ul>li{
+	float: left;
+}
+
+#coditor-header>#toolbar>ul>li>a{
+	color: #f38a00;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #111;
+    box-shadow: 1px 1px 1px #444;
+    padding: 3px;
+    border-radius: 3px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+    background: #222;
+}
+
+#coditor-ide{
+	margin-left: -20px;
+}
+
+#coditor-ide>#file-tree,
+#coditor-ide>#editor{
+	float: left;
+	height: 500px;
+}
+
+#coditor-ide>#file-tree{
+	width: 25%;
+	background: #272822;
+}
+
+#coditor-ide>#editor{
+	width: 75%;
+}
+
+#file-tree li{
+	padding-left: 20px;
+}
+
+#file-tree li a{
+	color: #ccc;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+#file-tree li a.active{
+	color: #f38a00;
+}
+
+#file-tree ul#tab{
+	background: #222;
+    margin: 0;
+    padding: 15px 0 0 5px;
+/*    position: fixed;
+    transform: translate(0, 0);*/
+}
+
+#file-tree ul#tab>li{
+	padding: 0 5px 5px 5px;
+    float: left;
+    border-bottom: 2px solid transparent;
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+
+#file-tree ul#tab>li.active{
+	border-bottom: 2px solid #f38a00;
+}
+
+#file-tree ul#tab>li>a{
+}
+
+.tab-content{
+	height: calc(100% - 40px);
+	overflow: scroll
+}
+
+.tab-pane{
+	display: none;
+}
+
+.tab-pane.active{
+	display: block;
+}
+
+#about-dlg{
+	display: none;
+	text-align: center;
+}
+
+#about-dlg i{
+	font-size: 10em;
+}
+
+#about-dlg h2{
+	color: #333;
+}
+
+#error-dlg i{
+	font-size: 4em;
+	float: left;
+	margin-right: 20px;
+}
+
+#error-dlg #error-wrap{
+	font: 12px 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+	list-style-type: square;
+	float: left;
+	padding-left: 20px;
+	margin: 0;
+}
+
+#coditor-footer{
+	margin-left: -20px;
+    padding: 10px 10px 10px 20px;
+    background: #2F3129;
+    border-bottom: 1px solid #aaa;
+}
+
+#coditor-footer span{
+	color: #666;
+	font-size: 11px
+}
+
+#coditor-footer span#file-info{
+	float: right;
+}
